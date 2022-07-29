@@ -16,8 +16,8 @@ void setup(){
   size(1600,900);
   background(#ffffff);
   //translate(width/2,-height/2);
-  file = new SoundFile(this,"Scene 1 with BGM.mp3");
-  file.play();
+  //file = new SoundFile(this,"Scene 1 with BGM.mp3");
+  //file.play();
   frameRate(30);
 }
 
