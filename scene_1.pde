@@ -2,13 +2,13 @@
 float [] scene_1_pasukan;
 void scene_1(){
   bg_perang();
-  Pasukan pasukan1 = new Pasukan(300,300);
+  Pasukan pasukan1 = new Pasukan(300,500);
   pasukan1.draw_();
-    Pasukan pasukan2 = new Pasukan(300,300);
+    Pasukan pasukan2 = new Pasukan(100,500);
   pasukan2.draw_();
-    Pasukan pasukan3 = new Pasukan(300,300);
+    Pasukan pasukan3 = new Pasukan(300,600);
   pasukan3.draw_();
-    Pasukan pasukan4 = new Pasukan(300,300);
+    Pasukan pasukan4 = new Pasukan(100,600);
   pasukan4.draw_();
   System.out.println(time/30);
   if (time/30<=25){
@@ -21,18 +21,18 @@ void scene_1(){
   //pasukan1.draw_();
   //pasukan.draw_();
   ////ndung.move_saber(radians(-t));
-  pushMatrix();
+  //pushMatrix();
+  ////translate(v_x,0);
+  ////bandung.drawHandLRotated(1);
+  //scale(-1,1);
+  //translate(-1600,0);
   //translate(v_x,0);
-  //bandung.drawHandLRotated(1);
-  scale(-1,1);
-  translate(-1600,0);
-  translate(v_x,0);
-  //drawBandungAll();
-  //bandung.moveBandung();
-  popMatrix();
+  ////drawBandungAll();
+  ////bandung.moveBandung();
+  //popMatrix();
   }
   
-  else if (time/30<=35){
+  else if (time/30<=30){
     Bandung bandung = new Bandung(500,500);
     Boko boko = new Boko(1000,550);
     bandung.drawWithSword();
@@ -61,29 +61,40 @@ void scene_1(){
     v_x++;
     Bandung bandung = new Bandung(500,500);
     Boko boko = new Boko(1000,550);
+    boko.drawWithSword();
     pushMatrix();
     translate(v_x,0);
     bandung.moveBandungWithSaber();
     popMatrix();
-    boko.drawWithSword();
+
   }
   
   else if (time/30<=66){
-    v_x+=100;
+    //v_x+=100;
     Bandung bandung = new Bandung(500,500);
     Boko boko = new Boko(1000,550);
     boko.drawWithSword();
+
     pushMatrix();
-    translate(v_x,0);
-    bandung.moveBandungWithSaber();
+    translate(500+v_x,0);
+    bandung.swingSaber();
     popMatrix();
+    //tanslate(v_x,0);
+
+    //popMatrix();
   }
   
-  else if (time/30<=85){
+  else if (time/30<=79){
     //v_x+=100;
     Bandung bandung = new Bandung(500,500);
     Boko boko = new Boko(1000,550);
     bandung.drawWithSword();
     boko.draw_dead();
+  }
+  else if (time/30<=82){
+    if (!file1.isPlaying()){
+      file2.play();
+    }
+    toggle_scene=2;
   }
 }

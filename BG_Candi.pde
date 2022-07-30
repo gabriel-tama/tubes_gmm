@@ -3,10 +3,10 @@
 //  size(1600,900);
 //}
 
-void drawBG_Candi(){
-  background(255);
-
+void drawBG_Candi(boolean fixed){
+  //background(255);
   pushMatrix();
+  //pushMatrix();
    int r,g,b, //deklarasikan variabel r,g,b  
    r1=0,g1=0,b1=91, //deklarasikan variabel r1=255,g1=0,b1=0 (merah)  
    r2=255,g2=0,b2=0; //deklarasikan variabel r1=0,g1=0,b1=255 (biru)
@@ -48,20 +48,29 @@ void drawBG_Candi(){
   popMatrix();
   pushMatrix();
     translate(500,150);
-    candi();
+    //candi();
+    if (!fixed){
+    //Roro roroj  = new Roro(500,500);
+    //roroj.draw_();
+    bagianDepan();  
+    //roroj.draw_();
+    }else{
+      candi();
+    }
+
   popMatrix();
 
 }
-void bulan(){
-      fill(255);
-      translate(560, height/2);
-      rotate(-PI/2);
+//void bulan(){
+//      fill(255);
+//      translate(560, height/2);
+//      rotate(-PI/2);
       
-      arc(0, 0, 75, 75, 0, PI*4);
-      fill(0,0,91);
+//      arc(0, 0, 75, 75, 0, PI*4);
+//      fill(0,0,91);
 
-      arc(10, 10, 75, 75, 0, PI*4);
-    }
+//      arc(10, 10, 75, 75, 0, PI*4);
+//    }
     
 
 void candi(){

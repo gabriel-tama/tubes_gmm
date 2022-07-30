@@ -256,4 +256,37 @@ public void move_checker(){
     translate(-1600,0);
     popMatrix();
   }
+    public void swingSaber(){ //move hands and foots
+    move_checker();
+    pushMatrix();
+    translate(-cm_x*3,-cm_y*3);
+    translate(x,y);
+      drawMahkota();
+  drawWajahBand();  
+  drawMataL_Band();
+  drawMataR_Band();
+  drawEyeR();
+    drawEyeL();
+    drawAlisR();
+    drawAlisL();
+    drawRambutBlkg();
+    drawHandL();
+  //moveLHand(radians(t));
+    drawRambut1();
+    drawRambut2();
+    drawMustache();
+      drawBody();
+      drawShort();
+    drawShort2();
+       moveRHandWithSaber(radians(-t));
+  //moveRHand(radians(-t));
+    drawKumis1();
+    drawKumis2();
+  drawMulut();
+  drawRFoot();
+  drawLeftFoot();
+  //moveRFoot(radians(-t));
+  //moveLFoot(radians(t));
+    popMatrix();
+  }
 }
