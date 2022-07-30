@@ -2,7 +2,7 @@ void scene_4(){
   System.out.println(time/30);
   //Roro roroj = new Roro(820,300);
   //roroj.draw_();
-  if (time/30<=279+3){
+  if (time/30<=290+3){
     drawBG_Candi(false);
     Jin jin1 = new Jin(200,300,#31087B);
     jin1.draw_();
@@ -12,12 +12,12 @@ void scene_4(){
     jin3.draw_();
     Jin jin4 = new Jin(1300,400,#FFC23C);
     jin4.draw_();  
-      Roro roroj = new Roro(820,300);
-      //fill(23);
-  roroj.draw_();
+  //    Roro roroj = new Roro(820,300);
+  //    //fill(23);
+  //roroj.draw_();
     
   }
-  else if (time/30<=279+7){
+  else if (time/30<=290+7){
      drawBG_Candi(false);
      pushMatrix();
      translate(v_xmin,0);
@@ -32,7 +32,7 @@ void scene_4(){
     popMatrix();
     v_xmin-=30;
   }
-   else if (time/30<=279+12){
+   else if (time/30<=290+12){
     drawBG_Candi(false); 
     pushMatrix();
      Bandung bandung = new Bandung(500,500);
@@ -49,7 +49,7 @@ void scene_4(){
     stroke(0);
     roroj.draw_();
     popMatrix();
-  }else if (time/30<=279+15 ){
+  }else if (time/30<=290+15 ){
 
     
       drawBG_Candi(false); 
@@ -80,12 +80,15 @@ void scene_4(){
      strokeWeight(1);
     bandung.draw_();
     popMatrix();
-    pushMatrix();
-    Roro roroj = new Roro(1000,750);
+    //pushMatrix();
+    Patung patung = new Patung(820,300);
     strokeWeight(1);
     //fill(#93968f);
-    roroj.draw_();
-    popMatrix();
+    //pushMatrix();
+    //translate();
+    patung.draw_();
+    //popMatrix();
+    //popMatrix();
     
   }
 }

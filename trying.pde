@@ -11,7 +11,7 @@ SoundFile file1;
 SoundFile file2;
 SoundFile file3;
 
-boolean scene_1_audio = false;
+
 
 
 

@@ -2,6 +2,7 @@
 float [] scene_1_pasukan;
 void scene_1(){
   bg_perang();
+  //Patung patung = new Patung(100,500);
   Pasukan pasukan1 = new Pasukan(300,500);
   pasukan1.draw_();
     Pasukan pasukan2 = new Pasukan(100,500);
@@ -10,6 +11,7 @@ void scene_1(){
   pasukan3.draw_();
     Pasukan pasukan4 = new Pasukan(100,600);
   pasukan4.draw_();
+  //patung.draw_();
   System.out.println(time/30);
   if (time/30<=25){
   Bandung bandung = new Bandung(500,500);

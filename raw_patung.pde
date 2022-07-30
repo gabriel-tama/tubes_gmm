@@ -14,9 +14,9 @@ void patung(){
 }
 
 void tanganKiripatung(){
-  tanganKiriAtasroro();
-  tanganKiriBawahroro();
-  pergelanganKiriroro();
+  tanganKiriAtaspatung();
+  tanganKiriBawahpatung();
+  pergelanganKiripatung();
 }
 void tanganKananpatung(){
   tanganKananAtaspatung();
@@ -73,7 +73,7 @@ void matapatung(){
   popMatrix();
   //bagian hitam kanan
   pushMatrix();
-  fill(0);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(137.84791,124.49167 );
@@ -96,7 +96,7 @@ void matapatung(){
   popMatrix(); 
   //kiri
   pushMatrix();
-  fill(255);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(134.67291,125.81458);
@@ -132,7 +132,7 @@ void matapatung(){
 }
 void mukapatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(142.08,128.73);
@@ -150,7 +150,7 @@ void mukapatung(){
 }
 void mahkotapatung(){
   pushMatrix();
-  fill(#FEFB40);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(136.26, 115.5);
@@ -171,7 +171,7 @@ void mahkotapatung(){
 }
 void rambutpatung(){
   pushMatrix();
-  fill(#5F1E24);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(132.29, 119.73);
@@ -194,7 +194,7 @@ void rambutpatung(){
 }
 void badanpatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(132.95833,134.67292);
@@ -209,7 +209,7 @@ void badanpatung(){
 }
 void bajupatung(){
   pushMatrix();
-  fill(#26AFD7);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(134.67292,139.57293);
@@ -223,7 +223,7 @@ void bajupatung(){
 }
 void kakiKiripatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(137.58333,144.33542);
@@ -238,7 +238,7 @@ void kakiKiripatung(){
 }
 void kakiKananpatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(138.64167,144.33542);
@@ -253,7 +253,7 @@ void kakiKananpatung(){
 }
 void celanapatung(){
   pushMatrix();
-  fill(#BFFEF6);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(134.67291,139.04375 );
@@ -274,7 +274,7 @@ void celanapatung(){
 
 void tanganKananAtaspatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(141.2875,132.95833);
@@ -289,7 +289,7 @@ void tanganKananAtaspatung(){
 
 void tanganKananBawahpatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(142.61042,138.51458);
@@ -302,7 +302,7 @@ void tanganKananBawahpatung(){
 
 void pergelanganKananpatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(144.19792,142.21875);
@@ -314,7 +314,7 @@ void pergelanganKananpatung(){
 }
 void tanganKiriAtaspatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(134.62279,132.69367);
@@ -329,7 +329,7 @@ void tanganKiriAtaspatung(){
 
 void tanganKiriBawahpatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(133.29987,138.24992);
@@ -342,7 +342,7 @@ void tanganKiriBawahpatung(){
 
 void pergelanganKiripatung(){
   pushMatrix();
-  fill(#F6A786);
+  fill(#93968f);
   createShape();
   beginShape();
     vertex(131.71237,141.95409);

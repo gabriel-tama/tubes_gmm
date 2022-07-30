@@ -34,13 +34,13 @@ void scene_2(){
     //bandung.draw_();
     //roroj.draw_();
   //  }
-  else if (time/30<=107+82+40+10){
+  else if (time/30<=107+82+40+10+10){
     Roro roroj = new Roro(1000,550);
     Bandung bandung = new Bandung(500,500);
     bandung.draw_();
     roroj.draw_();
     }
-  else if (time/30<=240){
+  else if (time/30<=250){
     if(!file2.isPlaying()){
       file3.play();
     }
